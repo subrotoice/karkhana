@@ -25,6 +25,7 @@ $dateStr2=date('Y-m-d', strtotime('6 day'));
 // SELECT userid, email, paymentDate FROM usuario, tracking_payment where usuario.clave=tracking_payment.userid and paymentDate>='2022-09-05%' and paymentDate<='2022-09-11%';
 // Simple Query execute
 $sql = "SELECT * FROM tracking_payment where paymentDate>='$dateStr1%' and paymentDate<='$dateStr2%'";
+$sql = "SELECT * FROM tracking_payment where paymentDate>='$dateStr1%' and paymentDate<='$dateStr2%' and remainderSent IS NULL";
 var_dump($sql);
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
