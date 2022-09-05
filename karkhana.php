@@ -12,8 +12,8 @@ $conn = new mysqli($host, $username, $password, $database);
 
 $dateStr1=date('Y-m-d');
 $dateStr2=date('Y-m-d', strtotime('6 day'));
-
-// $date1=date_create(date('Y-m-d'));
+ 
+// $date1=date_create(date('Y-m-d')); update
 // $date2=date_create(date('Y-m-d', strtotime('6 day')));
 // $diff=date_diff($date1, $date2);
 // var_dump($diff);
